@@ -1,6 +1,7 @@
 
 # ignore directories
 main/*
+!main/.gitkeep
 *egg-info/*
 
 # Byte-compiled / optimized / DLL files
