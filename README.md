@@ -2,9 +2,9 @@
 
 このリポジトリは、Apple Silicon搭載のMacで大規模言語モデル（LLM）に関連する環境を構築するためのものです。
 
-## 必要なツールのインストール
+## 使い方
 
-### `uv` がインストールされていない場合
+1. uvをインストールする
 
 以下のコマンドを実行して `uv` をインストールしてください：
 
@@ -12,13 +12,14 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-### wget がインストールされていない場合
+2. 環境を同期する
 
-Homebrew を使用して wget をインストールできます：
+`pyproject.toml`と`uv.lock`に従い環境が構築されます :
 
 ```bash
-brew install wget
+uv sync
 ```
+
 
 ## uv の使用方法
 
