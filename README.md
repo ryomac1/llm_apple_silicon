@@ -1,25 +1,55 @@
+# Setup
 
-# Environment
+このリポジトリは、Apple Silicon搭載のMacで大規模言語モデル（LLM）に関連する環境を構築するためのものです。
 
+## 必要なツールのインストール
 
-## 色々インストールする
+### `uv` がインストールされていない場合
 
-uvがない
+以下のコマンドを実行して `uv` をインストールしてください：
+
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-wgetコマンドが無い
+### wget がインストールされていない場合
 
+Homebrew を使用して wget をインストールできます：
+
+```bash
 brew install wget
+```
 
+## uv の使用方法
 
+### パッケージの追加
 
-## uvによる
-追加
-uv add name
+パッケージを追加するには、以下のコマンドを使用します：
 
-削除
-uv remove hogehoge
+```bash
+uv add <パッケージ名>
+```
 
-uv sync 
+### パッケージの削除
 
+不要なパッケージを削除するには、以下のコマンドを使用します：
+
+```bash
+uv remove <パッケージ名>
+```
+
+### 環境の同期
+
+uv を使用して環境を最新の状態に同期するには、以下のコマンドを実行します：
+
+```bash
+uv sync
+```
+
+### Python バージョンの固定
+
+指定したバージョンのPythonを固定するには、以下のコマンドを実行します（例：Python 3.12を使用する場合）：
+
+```bash
 uv python pin 3.12
+```
