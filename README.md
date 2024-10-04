@@ -1,8 +1,7 @@
-# Setup
+# 環境
 
-このリポジトリは、Apple Silicon搭載のMacで大規模言語モデル（LLM）に関連する環境を構築するためのものです。
-
-
+このリポジトリは、Apple Silicon搭載のMacで大規模言語モデル（LLM）に関連する環境を構築するためのものです。  
+※ MacOS 14.0以上推奨です
 
 ## 使い方
 
@@ -21,6 +20,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv sync
 ```
+
 これで、`python 3.12環境とllmの実行に必要なパッケージが.venvインストールされます
 
 ### 3. 仮想環境の有効化
@@ -38,8 +38,6 @@ uv sync
 ```bash
 deactivate
 ```
-
-
 
 ## uv の使用方法
 
